@@ -10,7 +10,7 @@
   <title>Uber Eats</title>
 </head>
 
-<body class="root">
+<body id="body" class="root">
   <header class="header">
     <div class="header__container container">
       <a href="/" class="header__logo">
@@ -90,9 +90,50 @@
   </main>
   <footer class="footer">
     <div class="footer__container container">
-      <img src="" alt="" class="footer__logo">
+      <div class="footer__logo-wrapper"><img src="images/white-logo.svg" alt="Логотип" class="footer__logo"></div>
+      <div class="footer__columns">
+        <div class="footer__column footer__column_messengers">
+          <select name="language" class="footer__select-language">
+            <option value="Русский">Русский</option>
+            <option value="English">English</option>
+          </select>
+          <span class="footer__hashtag"><span class="footer__hashtag-wrapper">#</span>UberEats</span>
+          <div class="footer__messengers">
+            <img src="images/facebook.svg" alt="facebook" class="footer__messenger">
+            <img src="images/twitter.svg" alt="twitter" class="footer__messenger">
+            <img src="images/instagram.svg" alt="instagram" class="footer__messenger">
+          </div>
+        </div>
+        <div class="footer__column footer__column_become-partner">
+          <a href="#" class="footer__link">Об UberEats</a>
+          <a href="#" class="footer__link">Станьте партнёром по доставке</a>
+          <a href="#" class="footer__link">Станьте парнёром-рестораном</a>
+        </div>
+        <div class="footer__column footer__column_cities">
+          <a href="#" class="footer__link">Все города</a>
+          <a href="#" class="footer__link">Цены</a>
+          <a href="#" class="footer__link">Помощь</a>
+          <a href="#" class="footer__link">FAQs</a>
+        </div>
+      </div>
+      <div class="footer__download">
+        <a href="#" class="footer__download-link"><img src="images/App_store.png" alt="App store"
+            class="footer__download-image"></a>
+        <a href="#" class="footer__download-link"><img src="images/Google_play.png" alt="Google play"
+            class="footer__download-image"></a>
+      </div>
+      <div class="footer__copyright">
+        <a href="#" class="footer__link footer__copyright-link">&copy; 2017 Uber Technologies Inc.</a>
+        <a href="#" class="footer__link footer__copyright-link">Обработка персональных данных</a>
+        <a href="#" class="footer__link footer__copyright-link">Пользовательское соглашение</a>
+      </div>
     </div>
   </footer>
+  <a href="#body" type="button" class="button-up">
+    <img src="images/arrow.svg" alt="Стрелка" class="button-up-image">
+  </a>
+
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,18 @@
+.button-up {
+  position: fixed;
+  right: 16px;
+  bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 27px 32px;
+  background-color: #59BD5A;
+  border: 0;
+  cursor: pointer;
+
+  @media screen and (max-width:510px) {
+    padding: 19px 24px;
+  }
+}
+
+.button-up-image {}

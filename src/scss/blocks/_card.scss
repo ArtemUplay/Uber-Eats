@@ -1,18 +1,21 @@
 .card {
+  align-self: start;
   justify-self: center;
   display: flex;
   flex-direction: column;
+  width: 100%;
 
   &__image {
     width: 100%;
-    max-width: 318px;
-    object-fit: contain;
+    height: 100%;
+    max-height: 256px;
+    object-fit: cover;
     margin: 0px 0px 16px 0px;
 
-    @media screen and (max-width:768px) {
-      max-width: 397px;
+    @media screen and (max-width:350px) {
+      object-fit: cover;
+      max-height: 246px;
     }
-
   }
 
   &__title {
