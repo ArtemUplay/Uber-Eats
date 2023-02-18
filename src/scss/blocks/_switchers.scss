@@ -1,0 +1,30 @@
+.switchers {
+  border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+
+  @media screen and (max-width:500px) {
+    display: none;
+  }
+
+  &__container {}
+
+  &__list {
+    padding: 32px 0px;
+    margin: 0;
+    display: flex;
+    gap: 40px;
+    list-style: none;
+  }
+
+  &__item {}
+
+  &__item-link {
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-gray;
+    text-decoration: none;
+
+    &_active {
+      color: #327430;
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.dishes {
+  padding: 56px 0px 80px 0px;
+
+  @media screen and (max-width:500px) {
+    padding: 112px 0px 40px 0px;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    color: $color-dark;
+    margin: 0px 0px 32px 0px;
+
+    @media screen and (max-width:500px) {
+      text-align: center;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 49px;
+
+    @media screen and (max-width:768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__card {}
+
+  &__link {
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    max-width: 470px;
+    justify-content: space-between;
+    border: 1px solid rgba(117, 117, 117, .2);
+    align-self: stretch;
+
+    &:hover .dishes__body {
+      background-color: rgba(117, 117, 117, .2);
+    }
+
+    @media screen and (max-width:768px) {
+      max-width: none;
+    }
+
+    @media screen and (max-width:500px) {
+      border: 0;
+      border-bottom: 1px solid rgba(117, 117, 117, .2);
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    flex: 1 1 auto;
+    transition: all .3s linear;
+
+    @media screen and (max-width:500px) {
+      padding: 0px 0px 16px 0px;
+    }
+  }
+
+  &__dish-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-dark;
+    margin: 0;
+    flex: 0 1 auto;
+
+    @media screen and (max-width:450px) {
+      max-width: 200px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  &__about {
+    margin: 4px 0px 0px 0px;
+    font-size: 13px;
+    line-height: 21px;
+    color: $color-gray;
+    flex: 1 1 auto;
+  }
+
+  &__price {
+    display: block;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    color: $color-dark;
+    justify-self: end;
+  }
+
+  &__image {
+    object-fit: cover;
+
+    @media screen and (max-width:500px) {
+      max-width: 105px;
+    }
+  }
+}
